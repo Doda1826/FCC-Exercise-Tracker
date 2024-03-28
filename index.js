@@ -51,8 +51,6 @@ app.post('/api/users', async (req, res) => {
   }catch(err){
     console.log(err)
   }
- 
-  res.json({hey: 'HI'})
 })
 
 app.post('/api/users/:_id/exercises', async (req, res) => {
@@ -122,8 +120,6 @@ app.get('/api/users/:_id/logs', async (req, res) => {
     log
   })
 })
-
-
 
 const listener = app.listen(process.env.PORT || 3000, () => {
   console.log('Your app is listening on port ' + listener.address().port)
